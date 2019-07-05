@@ -14,7 +14,7 @@ import java.util.List;
 @Data
 public class ServiceInfo {
     /**
-     * service名称
+     * service接口名称
      */
     private String serviceName;
 

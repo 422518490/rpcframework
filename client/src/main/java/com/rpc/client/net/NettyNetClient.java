@@ -38,6 +38,7 @@ public class NettyNetClient implements NetClient {
                 new NettyConnecter().nettyConnect(ipPort[0],Integer.parseInt(ipPort[1]),connectHandler);
             }).start();
             byte[] respData = connectHandler.getRespMsg();
+            // 关闭本次传输
             connectHandler.close();
             return respData;
         }catch (Exception e){

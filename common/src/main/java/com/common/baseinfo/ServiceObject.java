@@ -12,7 +12,7 @@ import lombok.Data;
 public class ServiceObject {
 
     /**
-     * 服务名称
+     * 服务接口名称
      */
     private String className;
 
